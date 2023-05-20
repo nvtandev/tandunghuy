@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BAND</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/responsivemember.css">
+    <link rel="stylesheet" href="/assets/fonts/themify-icons/themify-icons.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/8978/8978865.png">
+</head>
+<body>
+    <div id="web">
+        <!-- Phần Header -->
+        <div id="header">
+            <ul id="nav">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#band">Band</a></li>
+                <li><a href="/index.html#tour">Tour</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+                <li><a href="/introduce.html" target="_blank">Introduce</a></li>
+                <li>
+                    <a href="#band">
+                        Member
+                        <i class="nav-dow ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="/member/levonhelm.html">Levon Helm</a></li>
+                        <li><a href="/member/robbierobertson.html">Robbie Robertson</a></li>
+                        <li><a href="/member/rickdanko.html">Rick Danko</a></li>
+                        <li><a href="/member/richardmanuel.html">Richard Manuel</a></li>
+                        <li><a href="/member/garthhudson.html">Garth Hudson</a></li>
+                        <li><a href="/member/mickeyjones.html">Mickey Jones</a></li>
+                        <li><a href="/member/jkackcasady.html">Jack Casady</a></li>
+                        <li><a href="/member/jimweider.html">Jim Weider</a></li>
+                        <li><a href="/member/jormakaukonen.html">Jorma Kaukonen</a></li>
+                        <li><a href="/member/randyciarlante.html">Randy Ciarlante</a></li>
+                        <li><a href="#">Richard Bell</a></li>
+                        <li><a href="/member/blondiechaplin.html">Blondie Chaplin</a></li>
+                        <li><a href="/member/fredcarterjr.html">Fred Carter Jr</a></li>
+                        <li><a href="/member/johnsimon.html">John Simon</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+        </div>
+        
+        <!----------------------------------- CONTENT -------------------------------->
+        <section class="about-us">
+            <div class="about">
+              <img src="/assets/img/members/richardbell.jpg" class="pic">
+              <div class="text">
+                <h2>Richard Bell</h2>
+                    <p>Richard Bell (5 tháng 3 năm 1946 - 15 tháng 6 năm 2007 tại Toronto) là nhạc sĩ Canada. Hiểu biết về những phiên họp và những cuộc biểu diễn trực tiếp của ông, ông có thể là sự tưởng nhớ đẹp nhất đối với những người chơi piano.
+
+                        Trong thời gian của cái chết của ông, những nhạc sĩ biểu diễn của Toronto bằng bàn phím piano/nhạc sĩ sáng tác các bài hát/ca sĩ với Porkbelly Futures, và Danny Brooks & Rockin thỉnh thoảng đến thăm. Bell thành viên của nhóm nhạc Rock quốc gia, Burrito Deluxe, biểu diễn và đóng góp âm nhạc cho đĩa CD gần đây của họ, Disciples Of The Truth, dự kiến phát hành tháng 2 năm 2007. Sau cuộc chiến dài với bệnh Kahler - một dạng của ung thư, ông qua đời tại bệnh viện Toronto, ngày 15 tháng 6 năm 2007. Lúc đó, ông thọ 61 tuổi.</p>
+                <div class="data">
+                <a target="_blank" href="https://vi.wikipedia.org/wiki/Richard_Bell" class="hire">Xem Thêm</a>
+                </div>
+              </div>
+            </div>
+          </section>
+            
+        <!----------------------------------- END CONTENT ----------------------------->
+
+        <!-- MOLDO -->
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="ti-close"></i>
+                </div>
+                <header class="modal-header">
+                    <i class="ti-bag"></i> Tickets
+                </header>
+                <div class="modal-body">
+                    <label for="ticket-quantity" class="modal-label">
+                        <i class="ti-shopping-cart"></i>
+                        Tickets, $15 per person
+                    </label>
+                    <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
+                    <label for="ticket-email" class="modal-label">
+                        <i class="ti-user"></i>
+                        Send To
+                    </label>
+                    <input id="ticket-email" type="email" class="modal-input" placeholder="Enter email....">
+                    <button id="buy-ticket">
+                        Pay <i class="ti-check"></i>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <p class="modal-help">Need <a href="">help?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length ; i++) {
+            var menuItem = menuItems[i];
+            
+            menuItem.onclick = function(event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (isParentMenu) {
+                    event.preventDefault();
+                } else {    
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
+    <!-- BUY TICKETS -->
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+        const modalClose = document.querySelector('.js-modal-close')
+
+        function showBuyTickets() {
+            modal.classList.add('open')
+        }
+
+        function hideBuyTickets() {
+            modal.classList.remove('open')
+        }
+
+        for (const buyBtn of buyBtns){
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+
+        modalClose.addEventListener('click', hideBuyTickets)
+
+        modal.addEventListener('click', hideBuyTickets)
+
+        modalContainer.addEventListener('click', function (event){
+            event.stopPropagation()
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BAND</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/responsivemember.css">
+    <link rel="stylesheet" href="/assets/fonts/themify-icons/themify-icons.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/8978/8978865.png">
+</head>
+<body>
+    <div id="web">
+        <!-- Phần Header -->
+        <div id="header">
+            <ul id="nav">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#band">Band</a></li>
+                <li><a href="/index.html#tour">Tour</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+                <li><a href="/introduce.html" target="_blank">Introduce</a></li>
+                <li>
+                    <a href="#band">
+                        Member
+                        <i class="nav-dow ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Levon Helm</a></li>
+                        <li><a href="/member/robbierobertson.html">Robbie Robertson</a></li>
+                        <li><a href="/member/rickdanko.html">Rick Danko</a></li>
+                        <li><a href="/member/richardmanuel.html">Richard Manuel</a></li>
+                        <li><a href="/member/garthhudson.html">Garth Hudson</a></li>
+                        <li><a href="/member/mickeyjones.html">Mickey Jones</a></li>
+                        <li><a href="/member/jkackcasady.html">Jack Casady</a></li>
+                        <li><a href="/member/jimweider.html">Jim Weider</a></li>
+                        <li><a href="/member/jormakaukonen.html">Jorma Kaukonen</a></li>
+                        <li><a href="/member/randyciarlante.html">Randy Ciarlante</a></li>
+                        <li><a href="/member/richardbell.html">Richard Bell</a></li>
+                        <li><a href="/member/blondiechaplin.html">Blondie Chaplin</a></li>
+                        <li><a href="/member/fredcarterjr.html">Fred Carter Jr</a></li>
+                        <li><a href="/member/johnsimon.html">John Simon</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+        </div>
+        
+        <!----------------------------------- CONTENT -------------------------------->
+        <section class="about-us">
+            <div class="about">
+              <img src="/assets/img/members/levonhelm.jpg" class="pic">
+              <div class="text">
+                <h2>Levon Helm</h2>
+                  <p>Mark Lavon "Levon" Helm (26 tháng 5 năm 1940 – 19 tháng 4 năm 2012)
+                    là một ca sĩ kiêm tay trống của ban nhạc rock The Band nổi tiếng trong thập niên 1960.</p>
+                  <p>Helm được biết sâu sắc đầy cảm xúc bằng chất giọng đồng quê, và phong cách chơi trống sáng tạo nổi bật trên nhiều bản ghi âm của The Band, như "The Weight", "Up on Cripple Creek", "Ophelia" and "The Night</p>
+                  <p>They Drove Old Dixie Down". Cuộc đời sự nghiệp của Levon Helm trải nhiều thăng trầm trong suốt những năm 80 của thế kỷ trước sau khi ban nhạc The Band tan rã. Album đồng quê trở quay lại hoạt động âm nhạc năm 2007 Dirt Farmer đã giành được giải Grammy Album nhạc dân gian truyền thống vào tháng 2 năm 2008, và trong tháng 11 năm đó, tạp chí Rolling Stone xếp ông ở vị trí 91 trong danh sách 100 ca sĩ vĩ đại nhất của mọi thời đại. Trong năm 2010, Electric Dirt, album tiếp theo của album năm 2009 Dirt Farmer, đã giành giải thưởng đầu tiên từng có Grammy cho Album Americana, một giải thưởng lần đầu tiên được lập vào năm 2010. Năm 2011, album truyền hình trực tiếp tại Ramble at the Ryman được đề cử cho giải Grammy cùng thể loại và chiến thắng. Ông cũng được đánh giá cao trong vai trò diễn viên trong những bộ phim nổi tiếng The Coal Miner's Daughter, The Right Stuff.</p>
+                <div class="data">
+                <a target="_blank" href="https://vi.wikipedia.org/wiki/Levon_Helm" class="hire">Xem Thêm</a>
+                </div>
+              </div>
+            </div>
+          </section>
+            
+        <!----------------------------------- END CONTENT ----------------------------->
+
+        <!-- MOLDO -->
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="ti-close"></i>
+                </div>
+                <header class="modal-header">
+                    <i class="ti-bag"></i> Tickets
+                </header>
+                <div class="modal-body">
+                    <label for="ticket-quantity" class="modal-label">
+                        <i class="ti-shopping-cart"></i>
+                        Tickets, $15 per person
+                    </label>
+                    <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
+                    <label for="ticket-email" class="modal-label">
+                        <i class="ti-user"></i>
+                        Send To
+                    </label>
+                    <input id="ticket-email" type="email" class="modal-input" placeholder="Enter email....">
+                    <button id="buy-ticket">
+                        Pay <i class="ti-check"></i>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <p class="modal-help">Need <a href="">help?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length ; i++) {
+            var menuItem = menuItems[i];
+            
+            menuItem.onclick = function(event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (isParentMenu) {
+                    event.preventDefault();
+                } else {    
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
+    <!-- BUY TICKETS -->
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+        const modalClose = document.querySelector('.js-modal-close')
+
+        function showBuyTickets() {
+            modal.classList.add('open')
+        }
+
+        function hideBuyTickets() {
+            modal.classList.remove('open')
+        }
+
+        for (const buyBtn of buyBtns){
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+
+        modalClose.addEventListener('click', hideBuyTickets)
+
+        modal.addEventListener('click', hideBuyTickets)
+
+        modalContainer.addEventListener('click', function (event){
+            event.stopPropagation()
+        })
+    </script>
+</body>
+</html>
