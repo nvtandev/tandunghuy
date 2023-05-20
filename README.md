@@ -1,2 +1,0 @@
-# tandunghuy
-CNTT2 
